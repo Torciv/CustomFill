@@ -1,0 +1,55 @@
+#
+# PLACEHOLDER LIST
+# 
+# %NO_FILLED% = Number of dispensers that could not be filled
+# %RADIUS% = Radius number entered on the command by the player.
+# %FILLED% = Number of dispensers filled
+# %TNT_X_DISP% = TNT filled on each dispenser
+# %A_FILLED% = Dispensers that were already filled, so that hasn't been filled on the command.
+# %MAX_RADIUS% = Max radius allowed when filling dispensers, this is the max-radius number.
+# %TNT% = Tnt used to fill the dispensers
+# %TNT_MAX% = Max tnt that player can put on dispensers, this is the max-tnt number.
+# %TNT_CLEARED% = Tnt that has been cleared
+# %DISP_CLEARED% = Dispensers that have been cleared
+# %NO_DISP_CLEARED% = Dispensers that are left to clear
+# %TNT_TO_CLEAR% = Tnt that is left on dispensers to clear.
+#
+# Permission list:
+#
+# Important permission to be able tu use commands: custom.tntfill
+# Reload permission: custom.tntfill.reload
+# Permission to clear: custom.tntfill.clear
+# Permission to fill: custom.tntfill.clear
+#
+
+Prefix: "&6[&eTnTFill&6]"
+
+messages-events:
+    no-perm-use: " &cYou do not have permissions to use CustomFill!"
+    no-perm-reload: " &cYou are not allowed to do that!"
+    no-perm-fill: " &cYou are not allowed to Fill dispensers"
+    no-perm-clear: " &cYou are not allowed to clear dispensers"
+    inv-full: " &cError! Your inventory is full!"
+    not-tnt: " &cYou do not have TNT in your Inventory!"
+    not-filled-dispensers: " &e%NO_FILLED% &cdispenser(s) had not been filled out properly for lack of TNT"
+    not-dispensers-around: " &cThere is no dispenser in a radius of &e%RADIUS% &cBlocks!"
+    filled-dispensers: " &aFilled &e%FILLED% &adispenser(s) with &e%TNT% &aTNT &7(%TNT_X_DISP%/dispenser)"
+    already-filled: " &e%A_FILLED% &adispenser(s) already had &e%TNT_X_DISP% &aTNT"
+    low-radius: " &cError! The radius is too big. Max Radius: &e%MAX_RADIUS%"
+    low-tnt-amount: " &cError! You can not fill more than &e%TNT_MAX% &cTNT/dispenser!"
+    dispensers-cleared: " &aYou have cleared &e%TNT_CLEARED% &aTNT from &e%DISP_CLEARED% &adispenser(s)"
+    dispensers-to-clear: " &aThere is already &e%NO_DISP_CLEARED% &adispenser(s) filled with &e%TNT_TO_CLEAR% &aTNT"
+    already-cleared: " &cAll the dispensers are already Cleared!"
+
+# Max radius to use on tntfill
+max-radius: 25
+# Max tnt able to fill on dispensers
+max-tnt: 320
+
+# Radius in which player will clear dispensers
+default-clear-rad: 25
+
+
+# Do not change!
+version: '1.0'
+

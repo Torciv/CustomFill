@@ -1,0 +1,15 @@
+name: CustomFill
+author: Torciv
+version: 1.0
+main: com.torciv.customfill.CustomFill
+description: Minecraft custom TNTFILL better and easy!
+commands:
+    tntfill:
+        description: Command of tntfill's plugin.
+    tntfill reload:
+        description: Reloads tntfill's config.
+    tntfill <radius> <amount>:
+        description: Fill dispensers on a radius with tnt
+    tntfill clear:
+        description: Clear TNT dispensers with a default radius
+
